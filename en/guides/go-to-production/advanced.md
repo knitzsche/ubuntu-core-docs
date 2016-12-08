@@ -8,7 +8,7 @@ The advanced production model supports a wide range of options and provides a ri
 
 Highlights:
 
-* Your our own _branded store_ your devices connect to
+* Your own _branded store_ your devices connect to
 * You own device type (your _model_):
     * A standard or customized [kernel](../build-device/board-enablement.md) snap
     * A customized [gadget](../build-device/gadget.md) snap (required with a branded store)
