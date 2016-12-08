@@ -3,9 +3,11 @@ table_of_contents: true
 ---
 # Simple Production Model
 
-Here we provide an overview of the simple production model:
+The simple production model is the easiet way to get your devices into the field with updates from the Ubuntu Store.
 
-* Your device type is one of the supported device types. See <https://developer.ubuntu.com/core/get-started/flash>
+Highlights:
+
+* Your device is one of the supported device types. See <https://developer.ubuntu.com/core/get-started/flash>
 * Your device image consists only of snaps that are in the Ubuntu Store (not in a branded store subsection) 
 * Your image is made from unmodified core, kernel and gadget snaps
 * Your device also includes one or more extra snaps that you have published to the store as freely available (these provide the "special sauce" that makes your device unique and awesome)
