@@ -73,7 +73,7 @@ The result is an image file that you can flash onto your devices.
 
 Now, flash your devices with the image file you created. One approach is to use the `dd` command to flash the image to unpartitioned and unmounted SD cards that are destined for the devices. Details here may of course vary depending on your "factory".
 
-!["Simple Factory Model"](../../../media/factory-model-simple.jpg)
+!["Simple Factory Model"](../../../media/factory-model-simple.png)
 
 ## Distribute your devices
 

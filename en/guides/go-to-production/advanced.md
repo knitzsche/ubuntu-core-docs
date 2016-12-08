@@ -4,15 +4,15 @@ table_of_contents: true
 
 # Advanced Production Model
 
-The advanced production model supports a wide range of options and provides a rich set of cusomtize device, upgrade, and store functionality. 
+The advanced production model supports a wide range of options and provides a rich set of customize device, upgrade, and store functionality. 
 
 Highlights:
 
-* You define your own device type (your _model_):
-    * A standard or customized kernel snap [link to kernel snap creation]
-    * A customized gadget snap [link to reference/gadget.md] (required with a branded store)
-    * A factory image with extra snaps (which may not be publicly available)
-* Your our own _branded store_ of snaps your devices connect to
+* Your our own _branded store_ your devices connect to
+* You own device type (your _model_):
+    * A standard or customized [kernel](../build-device/board-enablement.md) snap
+    * A customized [gadget](../build-device/gadget.md) snap (required with a branded store)
+    * An image including extra snaps (which may available only through your branded store)
 * Additional features, such as _Update Control_ to manage when updates are published to your devices in the field
 
 The advanced go-to-production model involves a bit more up-front work than the simple model. But the end result is a highly manageable and customizable experience for your customers and your device ecosystem.
@@ -35,7 +35,7 @@ While the advanced model is highly flexible, the overall steps needed are straig
 1. Perform an initial boot of the device in the factory to get a _signed serial assertion_ from a _Serial Vault_
 1. Distribute your devices to the consumer
 
-Let's take a closer look at some these steps.
+Let's take a closer look.
 
 ## Create your branded store
 
@@ -43,7 +43,7 @@ A branded store is set up by Canonical for you. So, you need to contact your Can
 
 Canonical provides a _brand account_ and a _branded store_ connected to this account.
 
-Canonical also provides instructions, tools and processes needed for manufacturing, including, for example, creating the serial vault.
+Canonical also provides instructions, tools and processes needed for manufacturing, including, for example, creating the serial vault (more information below).
 
 ## Determine your device and kernel
 
@@ -51,7 +51,7 @@ You can select from numerous already supported device types and use the appropri
 
 You can also deploy a new device and use a customize kernel to support it. When customizing the kernel, you also need to publish it to your store.
 
-For info on bringing up new device types, see TODO: add link to bring up a board and kernel docs.
+For info on bringing up new device types, see [board enablement](../build-device/board-enablement.md).
 
 ## Create your gadget snap
 
@@ -65,15 +65,15 @@ For information on the gadget snap, see [Gadget Snap Format](../../reference/gad
 
 Naturally, your device provides a compelling user experience based at least in part on your unique software. You package this software as snap packages and publish them in your branded store. This software is available only to devices whose model assertion specifies your brand and store.
 
-Detailed information about building snap packages can be found on [snapcraft.io](http://snapcraft.io).
+Learn how to make snap packages here: [snapcraft.io](http://snapcraft.io).
 
-## Create the model assertions
+## Create the model assertion
 
 Building your device image requires a signed a _model assertion_. The model assertion is a complete statement of what the device is, including its brand, its store, its CPU architecture, the snaps it is constructed from, and more. You sign it with a key you have registered with the Ubuntu Store, and the signed model assertion is included in the device image. On boot, Ubuntu Core authenticates the signed model assertion with the Ubuntu Store, thus ensuring the authenticity of the device model. (Failed authentication prevents the device from booting to completion.)
 
 Steps for creating a signed model assertion are provided here <http://docs.ubuntu.com/core/en/guides/build-device/image-building>.
 
-Here is a sample of JSON file used as input when creating a model assertion for a fictional device, the "Device 1", made by the brand "ACME Corp". The host architecture is armhf. The image is populated with the gadget and kernel snaps that support this hardware, the core snap, and two extra snaps required for the device to function correctly, "acme-dashboard" and "acme-control-plane". 
+Here is a sample file used to create a model assertion for a fictional device, "Device 1", made by the brand "ACME Corp". The host architecture is armhf. The image is populated with the custom gadget snap and and kernel snap for this device, the OS snap (not explicitly mentioned), and two extra snaps required for the device to function correctly, "acme-dashboard" and "acme-control-plane". 
 
 **Note** The `authority-id` and `brand-id` must match the account-id defined for the ACME Corp account.
 
@@ -91,7 +91,7 @@ Here is a sample of JSON file used as input when creating a model assertion for 
       "timestamp": "2016-12-01T12:00:00+00:00"
     }
 
-One you have the signed model assertion, your kernel, gadget and extra snaps, you can build your image.
+One you have the signed model assertion and your kernel, gadget and extra snaps are published, you can build your image.
 
 ## Build the image
 
@@ -105,13 +105,13 @@ The result is an image file that you take to your factory to flash onto your dev
 
 Naturally, in the factory you flash your image onto your devices. The exact method here varies from case to case.
 
-## Factory: boot with serial vaule
+## Factory: boot with serial vault
  
 After the device is flashed, it is booted once in the factory.
 
 As noted, the advanced model requires that every device obtains a serial assertion signed by your branded account. This step occurs during this first boot in the factory. The device contacts the serial vault (using the URL specified in the gadget snap). For security reasons, the serial vault is generally inside the factory. The device provides other information as well, crucially, its serial number (which is also provided by the gadget snap). The serial vault returns the signed serial assertion to the device, and the device may then power down. When running in the field, this signed serial assertion is authenticated by the store and is required to access branded resources.
 
-To support you in managing you keys and signing the serial assertion during the production process Canonical have developed an open source tool called the [Serial Vault](http://github.com/ubuntu-core/identity-vault).
+To support you in managing you keys and signing the serial assertion during the production process, Canonical has developed an open source tool called the [Serial Vault](http://github.com/ubuntu-core/identity-vault).
 
 The serial vault ensures your devices leave production ready to communicate with the branded store and gives you confidence that only devices produced by you have access to your snaps.
 
@@ -119,6 +119,4 @@ The serial vault ensures your devices leave production ready to communicate with
 
 ## Distribute your devices
 
-When your devices are in the field and operational they will communicate with your branded store to identify when updates are available or to install snaps that the user wants.
-
-
+When your devices are in the field and operational, they communicate with your branded store to identify when updates are available and to install snaps that the user wants.
