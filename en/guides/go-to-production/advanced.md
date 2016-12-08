@@ -4,7 +4,7 @@ table_of_contents: true
 
 # Advanced Production Model
 
-The advanced production model supports a wide range of options and provides a rich set of customize device, upgrade, and store functionality. 
+The advanced production model supports a wide range of options and provides a rich set of device custumization, upgrade, and store functionality. 
 
 Highlights:
 
