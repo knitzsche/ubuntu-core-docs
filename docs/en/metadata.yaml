@@ -2,106 +2,143 @@ navigation:
   - title: Introduction
 
     children:
-      - title: What is Ubuntu Core?
+      - title: Geting Started
         location: index.md
 
-      - title: Security and sandboxing
-        location: guides/intro/security.md
+      - title: Ubuntu Core
+        location: intro/ucore.md
 
-      - title: Store and developer accounts
-        location: guides/intro/store.md
+      - title: Ubuntu Core releases 
+        location: intro/uc-releases.md
 
-  - title: Build a device
+      - title: Setting up your accounts
+        location: intro/setting-up-accounts.md
 
-    children:
-
-      - title: Ubuntu Core images
-        location: guides/build-device/image-building.md
-
-      - title: Board enablement overview
-        location: guides/build-device/board-enablement.md
-
-      - title: Gadget snaps
-        location: guides/build-device/gadget.md
-
-      - title: Configuration and hooks
-        location: guides/build-device/config-hooks.md
-
-      - title: Interfaces
-        location: guides/build-device/interfaces.md
-
-  - title: Build a stack
+  - title: Snap Stores 
 
     children:
       - title: Introduction
-        location: stacks/index.md
+        location: store/intro.md
 
-  - title: Manage a device
+        children: 
+          - title: Global and Brand stores
+            location: store/global_brand.md
+
+          - title: Dashboard
+            location: store/dashboard.md
+
+          - title: Base and Device View stores
+            location: store/base_device.md
+
+          - title: Snap curation
+            location: store/curation.md
+
+          - title: Store configuration
+            location: store/store_config.md
+
+          - title: Store Prefix
+            location:  store/store_prefix.md
+
+          - title: Accounti and Roles
+            location:  store/accounts_roles.md
+
+          - title: Development and Publishing
+            location:  store/dev_release.md
+
+          - title: Connecting Interfaces
+            location:  store/connecting_interfaces.md
+
+          - title: Store Channels
+            location:  store/channels.md
+
+          - title: Operations
+            location:  store/operations.md
+
+          - title: Provisioning
+            location:  store/provisioning.md
+
+      - title: Serial Vault
+        location: store/serial-vault.md
+
+      - title: Snap Store Proxy
+        location: store/snap-store-proxy.md
+
+      - title: Snap Store API reference 
+        location: store/snap-store-api.md
+
+  - title: Building images
 
     children:
 
-      - title: System User
-        location: guides/manage-devices/index.md
-      - title: Audio management
-        location: stacks/audio/index.md
-      - title: Bluetooth management
-        location: stacks/bluetooth/index.md
-      - title: Disk management
-        location: stacks/disk/index.md
-      - title: Network management & services
-        location: stacks/network/index.md
+      - title: Introduction
+        location: images/intro.md
+
+      - title: Building Ubuntu Core
+        location: images/build-core.md
+
+      - title: Building Ubuntu Classic
+        location: images/build-classic.md
+
+      - title: Seeding Ubuntu Classic
+        location: images/seeding-classic.md
+
+
+  - title: System management  
+
+    children:
+      - title: Introduction
+        location: mgmt/intro.md
+
+      - title: Update control
+        location:  mgmt/updates.md
+
+      - title: Netplan
+        location:  mgmt/netplan.md
+
+      - title: System user and SSH
+        location:  mgmt/system_user.md
+
+      - title: Logs
+        location:  mgmt/logs.md
+
+      - title: Device Ops
+        location:  mgmt/device_ops.md
+
+  - title: Capabilities
+
+    children:
+      - title: Introduction
+        location: capabilities/intro.md
+
+      - title: Networking
+        location: capabilities/networking.mdet  
+
+      - title: Modem Manager
+        location: capabilities/modem-manager.md
+
+      - title: Bluetooth
+        location: capabilities/bluetooth.md
+
+      - title: Disk
+        location: capabilities/disk.md
+
+      - title: Audio
+        location: capabilities/audio.md
+
+      - title: OpenVPN
+        location: capabilities/openVPN.md
+
       - title: Power management
-        location: stacks/power/index.md
+        location: capabilities/power_management.md
+
       - title: TPM
-        location: stacks/tpm/index.md
+        location: capabilities/tpm.md
 
-  - title: Get a store
+      - title: WiFi AP
+        location: capabilities/wifi-ap.md
 
-    children:
-      - title: Introduction
-        location: build-store/index.md
-
-        children:
-          - title: Request a brand store
-            location: build-store/create.md
-
-          - title: Client setup
-            location: build-store/client-setup.md
-
-      - title: Manage
-        location: build-store/manage.md
-
-        children:
-          - title: Settings
-            location: build-store/settings.md
-
-          - title: Reviews
-            location: build-store/reviews.md
-
-          - title: Reviewer tools
-            location: build-store/reviewer-tools.md
-
-      - title: Develop
-        location: build-store/develop.md
-
-        children:
-          - title: Upload snaps
-            location: build-store/upload-snaps.md
-
-      - title: Report an issue
-        location: build-store/issues.md
-
-  - title: Go to production
-
-    children:
-      - title: Introduction
-        location: guides/go-to-production/intro.md
-
-      - title: Simple - Ubuntu store
-        location: guides/go-to-production/simple.md
-
-      - title: Advanced - Brand store
-        location: guides/go-to-production/advanced.md
+      - title: Utilities
+        location: capabilities/utilities.md
 
   - title: Reference
 
@@ -134,9 +171,6 @@ navigation:
 
       - title: Core interfaces reference
         location: reference/interfaces/index.md
-
-      - title: Automatic refreshes
-        location: reference/automatic-refreshes.md
 
       - title: Ubuntu Core REST API
         location: reference/rest.md
