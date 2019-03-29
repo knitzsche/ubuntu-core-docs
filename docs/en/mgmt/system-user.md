@@ -5,17 +5,26 @@ table_of_contents: true
 
 # System user
 
-The special system user allows you to ssh to device and execute commands as root. 
+As noted, Ubuntu Core runs and updates without any added users. Applications run as root, confined by Apparmor and Secconp.
 
-By default is created on first boot on user entered ubuntu account creds. (Must have placed you publish ssh key on login.ubuntu.com)
+However, you can create a System User. The system user allows you to ssh to device and execute commands, including with sudo.
 
-Can suppress that, or simply never complete it, if so device is "unmanaged". 
+By default, a System-User is created on first boot after Ubuntu SSO account data is entered in terminal. (You must have placed the user's public SSH key on login.ubuntu.com)
 
-only one system user is possible, although extra users are. 
+**Note**: This terminal application is called console-conf. Console-conf can be suppressed: Contact Canonical for information. 
 
-Note: in most cases, IoT devices do not require a user. 
+When console-conf is completed, a system-user is created, and `snap managed` command returns true:
 
-On unmanaged devices, you can create the system-user by inserting a USB drive that contains a signed system-user assertion. 
+```bash
+$ snap managed
+true
+```
+
+If console-conf is never completed, no System User is created and the `snap managed` command returns `false`.
+
+**Note**: Only one system user is possible, although extra users are. 
+
+On with no System User, you can create one by inserting a USB drive that contains a signed system-user assertion. 
 
 Depending on the model assertion, the key that signs the system-user assertion may need to be registered by the Brand Account. 
 
@@ -23,3 +32,4 @@ The model can contain an optional "system-user-authority" field to delegate syst
 
 ETC.
 
+TODO

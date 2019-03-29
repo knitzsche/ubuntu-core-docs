@@ -1,14 +1,17 @@
 navigation:
-  - title: Introduction
+  - title: Getting started
 
     children:
-      - title: Geting Started
+      - title: Geting around
         location: index.md
 
-      - title: Ubuntu Core
+      - title: Ubuntu for IoT
+        location: intro/intro.md
+
+      - title: About Ubuntu Core
         location: intro/ucore.md
 
-      - title: Ubuntu Core releases 
+      - title: Ubuntu IoT Releases 
         location: intro/uc-releases.md
 
       - title: Setting up your accounts
@@ -17,7 +20,7 @@ navigation:
   - title: Snap Stores 
 
     children:
-      - title: Introduction
+      - title: Store guide
         location: store/intro.md
 
         children: 
@@ -39,7 +42,7 @@ navigation:
           - title: Store Prefix
             location:  store/store_prefix.md
 
-          - title: Accounti and Roles
+          - title: Accounts and Roles
             location:  store/accounts_roles.md
 
           - title: Development and Publishing
@@ -70,20 +73,17 @@ navigation:
 
     children:
 
-      - title: Introduction
+      - title: Getting started
         location: images/intro.md
 
       - title: Building Ubuntu Core
         location: images/build-core.md
 
-      - title: Building Ubuntu Classic
-        location: images/build-classic.md
-
       - title: Seeding Ubuntu Classic
         location: images/seeding-classic.md
 
 
-  - title: System management  
+  - title: Device management  
 
     children:
       - title: Introduction
@@ -95,54 +95,70 @@ navigation:
       - title: Netplan
         location:  mgmt/netplan.md
 
+      - title: Using snapd-control
+        location:  mgmt/snapd-control.md
+
       - title: System user and SSH
-        location:  mgmt/system_user.md
+        location:  mgmt/system-user.md
+
+      - title: Installing snaps offline
+        location:  mgmt/sideloading.md
 
       - title: Logs
         location:  mgmt/logs.md
+ 
+      - title: Serial console
+        location:  mgmt/serial-console.md
 
-      - title: Device Ops
-        location:  mgmt/device_ops.md
-
-  - title: Capabilities
+  - title: Additional capabilities
 
     children:
       - title: Introduction
         location: capabilities/intro.md
 
-      - title: Networking
-        location: capabilities/networking.mdet  
+      - title: Network Manager
+        location: capabilities/network-manager.md  
 
       - title: Modem Manager
-        location: capabilities/modem-manager.md
-
-      - title: Bluetooth
-        location: capabilities/bluetooth.md
-
-      - title: Disk
-        location: capabilities/disk.md
-
-      - title: Audio
-        location: capabilities/audio.md
-
-      - title: OpenVPN
-        location: capabilities/openVPN.md
-
-      - title: Power management
-        location: capabilities/power_management.md
-
-      - title: TPM
-        location: capabilities/tpm.md
+        location: capabilities/modem-manager.md  
 
       - title: WiFi AP
-        location: capabilities/wifi-ap.md
+        location: capabilities/WiFi-AP.md  
+
+      - title: Bluetooth
+        location: capabilities/bluetooth/index.md
+
+      - title: Disk
+        location: capabilities/disk/index.md
+
+      - title: Audio
+        location: capabilities/audio/index.md
+
+      - title: Power management (battery)
+        location: capabilities/power/index.md
+
+      - title: TPM
+        location: capabilities/tpm/index.md
 
       - title: Utilities
-        location: capabilities/utilities.md
+        location: capabilities/utilities/index.md
+
+      - title: Location
+        location: capabilities/location/index.md
 
   - title: Reference
 
     children:
+
+      - title: Ubuntu Core REST API
+        location: reference/rest.md
+
+      - title: Store REST API
+        location: reference/sotre-rest.md
+
+      - title: Ubuntu Core Configuration
+        location: reference/core-configuration.md
+
       - title: Assertions
         location: reference/assertions.md
 
@@ -166,20 +182,5 @@ navigation:
           - title: validation
             location: reference/assertions/validation.md
 
-      - title: Gadget snap format
-        location: reference/gadget.md
-
-      - title: Core interfaces reference
-        location: reference/interfaces/index.md
-
-      - title: Ubuntu Core REST API
-        location: reference/rest.md
-
-      - title: Ubuntu Core Configuration
-        location: reference/core-configuration.md
-
-  - title: Build snaps
-    location: http://snapcraft.io
-
-  - title: Report a docs issue
+  - title: Report a docuemtnation issue
     location: https://bugs.launchpad.net/snappy/+bugs?field.tag=snap-docs
