@@ -5,11 +5,20 @@ navigation:
       - title: Geting around
         location: index.md
 
-      - title: Ubuntu for IoT
-        location: intro/intro.md
+      - title: Ubuntu Core for IoT
+        location: intro/intro-core.md
 
-      - title: About Ubuntu Core
-        location: intro/ucore.md
+      - title: Ubuntu classic for IoT
+        location: intro/intro-classic.md
+
+      - title: Snaps 
+        location: intro/intro-snaps.md
+
+      - title: Snap Stores
+        location: intro/intro-stores.md
+
+      - title: IoT Platforms
+        location: intro/intro-platforms.md
 
       - title: Ubuntu IoT Releases 
         location: intro/uc-releases.md
