@@ -1,4 +1,5 @@
 navigation:
+
   - title: Getting started
 
     children:
@@ -25,6 +26,32 @@ navigation:
 
       - title: Setting up your accounts
         location: intro/setting-up-accounts.md
+
+  - title: Snapcraft keys
+
+    children:
+
+      - title: About
+        location: keys/keys.md
+
+      - title: Creating and registering
+        location: keys/creating.md
+
+  - title: Building images
+
+    children:
+
+      - title: Getting started
+        location: build-image/about.md
+
+      - title: The Model
+        location: build-image/model.md
+
+      - title: Building Ubuntu Core
+        location: build-image/core.md
+
+      - title: Seeding Ubuntu Classic
+        location: build-image/seeding-classic.md
 
   - title: Snap Stores 
 
@@ -77,19 +104,6 @@ navigation:
 
       - title: Snap Store API reference 
         location: store/snap-store-api.md
-
-  - title: Building images
-
-    children:
-
-      - title: Getting started
-        location: images/intro.md
-
-      - title: Building Ubuntu Core
-        location: images/build-core.md
-
-      - title: Seeding Ubuntu Classic
-        location: images/seeding-classic.md
 
 
   - title: Device management  
