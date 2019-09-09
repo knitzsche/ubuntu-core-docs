@@ -4,37 +4,21 @@ title: Snap Stores
 
 # Snap Stores
 
-Snap Stores are a key part of Ubuntu IoT development as they provide a mechanism to store and deliver versions of applications packaged as snaps to devices, to classic Ubuntu, indeed to most Linux system. 
+Snap Stores deliver software unattended to any system with snapd: Ubuntu Core, classic Ubuntu or most Linux distributions. When a new snap revision is published in a Snap Store, snap systems learn about it (following their own schedules), and they install the new revision, leaving the previous snap revision on disk (to speed rollback, just in case that is needed).
 
-Without a store, a vendor has to manually distribute their snaps to their users having a difficult time keeping track of who’s received the latest version of their application.
+No additional management software is needed: it's automatic and built in, with all the controls and efficientices needed for deployments from large to small. 
 
-The most general type of store is the global snap store. It is the default store that every modern Linux distribution with snapd installed points to and from which to retrieve snaps. It is public and it is global so that a common repository of software is available and searchable to as wide an audience as possible. Anyone with a valid Ubuntu SSO account may publish and distribute their snapped application via the global snap store.
+# Global Snap Store
 
-The global snap store has a concept of paid apps which places some restrictions on who can download an application. All paid applications are searchable in the store just like non-paid apps. However, paid applications can only be installed after a user has paid for gaining access to this application.
+The *global* Snap store is free and open to publish in and to install from (all you need to publish there is an [Ubuntu SSO account](login.ubuntu.com)). Stock Ubuntu Core and classic Ubuntu systems all use the global Snap Store. Check it [out](https://snapcraft.io/store). 
 
-You may follow this [step-by-step guide][step-by-step-guide] that will show you how to distribute snaps to your devices through the snap store.
+# Brand Snap Stores
 
-Another type of store that can be used for distributing snaps to devices is one called a Brand store. A Brand store provides you with the ability to restrict the scope with which your snaps are visible, which gives you complete control over what devices may search and install your applications.
+Brand Snap Stores enable commercial and protected snap software distribution. Brands can privately publish snaps in Brand Stores. And, only authenticated Brand systems can install them.
 
-A Brand store can be configured such that it can inherit all snaps from the global snap store and/or inherit snaps from another Brand store. It is possible to inherit snaps from as many other stores as desired creating as flexible of a hierarchy as needed to deliver your snaps and control the deployment to the right set of devices.
+Through various Snap Store inclusion techniques, Brands can curate sets of snaps to meet the precise needs of your Brand devices and solutions. Brand Stores can include all snaps in the global Store, or just selected global snaps.
 
-The following table covers some scenarios when you’d want to use the global snap store versus a private Brand store.
+Brand Stores enable such powerful features as Snapd Interface Autoconnection, even for the most powerful interfaces, thus giving Brands authority and control over their fleets beyond that available to stock devices.
 
-| Scenario                                                      | Global Snap Store | Private Brand Store |
-|---------------------------------------------------------------|-------------------|---------------------|
-| Distribute an application to anyone                           |        ✓          |                     |
-| Distribute an application to certain clients via a paywall    |        ✓          |                     |
-| Distribute an application to a specific set of client devices |                   |          ✓          |
-| Canonical-hosted store solution                               |        ✓          |          ✓          |
-| Can be proxied and cached on local premises                   |        ✓          |          ✓          |
-| *Self-hosted store solution                                   |                   |          ✓          |
+Brand Stores are feature rich to support Brand based commercial deployements, including revision control, snap review before release, role-based access and use-cases, ann more 
 
-(* A self-hosted store solution is an upcoming feature).
-
-There are many other important things to know about the global snap store
-and Brand stores. These are covered in greater detail in later sections of
-this documentation.
-
-Follow this [guide][guide] to request a Brand store or
-[get in contact][get-in-contact] with someone from Canonical to learn more
-about getting your own Brand store.
