@@ -10,26 +10,23 @@ Here we explain actually building an Ubuntu Core image.
 ## Requirements
 
  - Work on an Ubuntu system
- - A signed Model Assertion
+ - A signed Model Assertion. See [The Model](./model.md)
  - All snaps in the Model Assertion must be available from the global Snap Store, or, if the Model ASsertion specifies a Brand Store, then all snaps must be available through it.
- - The ubuntu-image snap must be installed
+ - The ubuntu-image snap must be installed See [Getting Started](./about.md)
 
+# Building an Ubuntu Core image
 
-```bash
-snap install --classic ubuntu-image
-```
+Here we build an image that uses the global Snap Store using the signed pi3 Model Assertion created previously in [The Model](./model.md).
 
-# Building the Ubuntu Core image
-
-Here we build an image that uses the global Snap Store.
-
-Build the image from the `beta` channel and put build results into `img-pi3` directory:
+For demonstration purposes, the following command builds the image from the `beta` channel. We put the build results into `img-pi3` directory:
 
 ```bash
-ubuntu-image -channel=candidate -O pi3-test pi3.model
+ubuntu-image -channel=candidate -O img-pi3 pi3.model
 ```
 
 # Building from a Brand Store
+
+Brand Stores are protected and don't allow snaps to be downloaded without authentication. Here we cover how to build an Ubuntu Core image where the Model assertion points at a Brand Store, thus the snaps are downloaded through the Brand Store, and authentication is requried. 
 
 ## Get credentials
 
