@@ -4,26 +4,23 @@ title: Ubuntu for IoT
 
 # Ubuntu Core for IoT
 
-Ubuntu Core is the newest Ubuntu operating system (OS). It primarily targets
-the requirements of headless IoT devices and their distributors. It is a
-minimalist rendition of Ubuntu that is lightweight, highly secure, and
-transactionally updated. Every application and data are isolated from every
-other application and data.
+Ubuntu Core is an all-snaps, minimalistic rendition of Ubuntu designed from the ground up to meet the needs of IoT devices and their distributors. 
 
-An Ubuntu Core system is built using snaps: a core snap, a kernel snap, a gadget
-snap, and one or more application snaps. Canonical provides
-reference snaps and OS images for some current best-of-breed IoT platforms. 
+It is light-weight and battle-hardened with built in software confinement for system security and stability.  
+
+It is composed only of snaps, which are transactionally and atomically updated, with automatic rollback on installation failure: a kernel snap, a core snap (for the rootfs), a gadget
+snap, a snapd snap, and application snaps. 
+
+Canonical provides reference snaps and OS images for some current best-of-breed IoT platforms. 
 You can also roll your own image. 
 
-Ubuntu Core uses a rolling release model that
-aligns with Ubuntu LTS releases. The latest Ubuntu Core is currently UC16 and is
-based on the 16.04 long-term support (LTS) release of classic Ubuntu, and UC18, aligned with 18.04 LTS. 
+Ubuntu Core uses a rolling release model aligned with Ubuntu Long Term Support (LTS) releases. 
 
-## Ubuntu Core features
+## Key features
 
  - Faster, more reliable, with stronger security guarantees for applications and
    users compared to a traditional Linux distribution.
- - Atomic transactional upgrades for applications and the OS itself, all of which
+ - Atomic transactional snap-based updates for applications and the OS itself, all of which
    can be rolled back if needed automating most maintenance and upgrades.
  - Separation of OS and application files into sets of distinct read-only images,
    to easily and securely add multiple applications and additional functionality onto a device.
