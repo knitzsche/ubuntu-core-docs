@@ -5,19 +5,25 @@ table_of_contents: true
 
 # Getting started
 
-The `ubuntu-image snap` command builds an Ubuntu Core image in minutes. 
+Anyone can build an Ubuntu Core image in just a couple minutes from an Ubuntu classic system.
 
-Install this with:
+All you really need in the `ubuntu-image` tool, easily installable as a snap, and a signed Model Assertion. 
+
+
+## Ubuntu-image tool 
+
+Install `ubuntu-image` with:
 
 ```bash
 snap install ubuntu-image --beta --classic
 ```
 
-You can also build classic images with `ubuntu-image classic ...`, although this is experimental. 
+**Note** When building an Ubuntu Core image, use `ubuntu-image snap ARGS`. You can also build classic images with `ubuntu-image classic ARGS`, although this is experimental. 
 
 ## Model
 
-Every image is built as a certian model as defined by its Model assertion. See [The Model](./model.md).
+To build an Ubuntu Core image, you need a signed Model Assertion. This defines the image in every respect, including its architecture, what Snap Store it points at, what snaps are included in the image and so on. You can use a stock Canonical Model Assertion, or create and sign your own. For more information, see [The Model](./model.md).
+
 
 ## Reference platforms 
 
@@ -44,7 +50,5 @@ You can also add snaps to the image at build time by listing them as arguments o
 The output is a *img file that can be written to the device and a device-specific manner. 
 
 There are also  seed.manifest and snap.manifest files that provide key information about the snaps installed in the image. 
-
-
 
 
