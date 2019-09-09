@@ -1,20 +1,23 @@
 ---
-title: "About"
+title: "Getting Started"
 table_of_contents: true
 ---
 
-# About
+# Getting Started
 
-Before you can build a custom image or take other fun steps, you need to generate and register a *snapcraft key*.
+Not everyone needs to generate and use Snapcraft keys. For example, you can build stock Canonical Ubuntu Core images without them. And you can publish snaps without them.
 
-The ```snapcraft``` tool creates and registers keys for you. 
+But, if you want to build a custom Ubuntu Core image, set up a commercial Brand store, and more, you need to understand the simple steps to generate and register Snapcraft keys.
 
-The keys are technically GPG keys, with a public and a private part. 
+Fortunately, the ```snapcraft``` tool creates and registers keys for you. 
 
-Registering the key uploads the public part of the key to Canonical servers. Key registration is specific to the user currently logged in through ```snapcraft login```. The regsitered key is associated with this particular Ubuntu SSO Account. 
+## About Snapcraft keys
 
-This process enables Canonical authentication and verification of items signed by the key, such as assertions. It also restricts certain actions as appropriate for the Ubuntu account. For example, only Brand Account registered keys can sign Model Sssertions that allow devices to connect to a Brand Store. And only authorized accounts can use registered keys to sign System User assertions. 
+Snapcraft keys are, behind the scenes, actually GPG keys. As such they have a public and a private part. They are generated on an Ubuntu classic system with snapcraft installed..  
 
+Registering the key uploads the public part of the key to Canonical servers. Key registration is specific to the user currently logged in through ```snapcraft login```. Regsitering key associates it with this particular Ubuntu SSO Account. 
+
+This process enables Canonical authentication and verification of items signed by the key, such as rAassertions. It also restricts certain actions as appropriate for the Ubuntu account. For example, only Brand Account registered keys can sign Model Assertions that allow devices to connect to a Brand Store. And only authorized accounts can use registered keys to sign System User assertions. 
 
 # Security warning
 

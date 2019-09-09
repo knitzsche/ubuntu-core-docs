@@ -28,7 +28,7 @@ navigation:
 
     children:
 
-      - title: About
+      - title: Getting started 
         location: keys/keys.md
 
       - title: Creating and registering

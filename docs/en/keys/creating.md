@@ -5,7 +5,7 @@ table_of_contents: true
 
 # Requirements
 
-These procedures assume you are working on an Ubuntu classic system,
+hese procedures assume you are working on an Ubuntu classic system.
 
 You must also have an Ubuntu SSO account. See the "Getting Started" section.
 
