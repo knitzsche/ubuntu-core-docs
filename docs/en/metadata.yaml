@@ -1,15 +1,13 @@
 navigation:
 
-  - title: Getting started
+  - title: Introduction
 
     children:
-      - title: Geting around
-        location: index.md
 
       - title: Ubuntu for IoT
         location: intro/intro-ubuntu-iot.md
 
-      - title: IoT Platforms
+      - title: Hardware platforms
         location: intro/intro-platforms.md
 
       - title: Snaps 
@@ -18,21 +16,14 @@ navigation:
       - title: Snap Stores
         location: intro/intro-stores.md
 
-      - title: Ubuntu IoT Releases 
+      - title: Ubuntu IoT releases 
         location: intro/uc-releases.md
 
       - title: Setting up your accounts
         location: intro/setting-up-accounts.md
 
-  - title: Snapcraft keys
-
-    children:
-
-      - title: Getting started 
-        location: keys/keys.md
-
-      - title: Creating and registering
-        location: keys/creating.md
+      - title: Geting around
+        location: index.md
 
   - title: Building images
 
@@ -47,7 +38,7 @@ navigation:
       - title: Building Ubuntu Core
         location: build-image/core.md
 
-      - title: Seeding Ubuntu Classic
+      - title: Seeding Ubuntu rlassic
         location: build-image/seeding-classic.md
 
   - title: Snap Stores 
@@ -166,6 +157,16 @@ navigation:
       - title: Location
         location: capabilities/location/index.md
 
+  - title: Snapcraft keys
+
+    children:
+
+      - title: Getting started 
+        location: keys/keys.md
+
+      - title: Creating and registering
+        location: keys/creating.md
+ 
   - title: Reference
 
     children:
