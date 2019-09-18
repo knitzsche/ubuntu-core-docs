@@ -2,7 +2,11 @@
 title: Ubuntu for IoT
 ---
 
-# Ubuntu Core for IoT
+# Ubuntu for IoT
+
+Ubuntu Core is a the Ubuntu rendition designed to meet the precise requirement of IoT and devices. Classic Ubuntu can also be used to meet specific IoT use cases. So, welcome to Ubuntu for Iot, and let's get started. 
+
+## Ubuntu Core for IoT
 
 Ubuntu Core is an all-snaps, minimalistic rendition of Ubuntu designed from the ground up to meet the needs of IoT devices and their distributors. 
 
@@ -16,7 +20,7 @@ You can also roll your own image.
 
 Ubuntu Core uses a rolling release model aligned with Ubuntu Long Term Support (LTS) releases. 
 
-## Key features
+### Key features
 
  - Faster, more reliable, with stronger security guarantees for applications and
    users compared to a traditional Linux distribution.
@@ -30,7 +34,7 @@ Ubuntu Core uses a rolling release model aligned with Ubuntu Long Term Support (
  - Public/private key-based validation and authentication is built-in at every
    stage, proving that what runs is exactly what OS and app developers intend.
 
-# Ubuntu Classic for IoT
+## Ubuntu Classic for IoT
 
 Classic Ubuntu includes the traditional Ubuntu Desktop, Ubuntu Server and 
 Ubuntu Cloud distributions. These well-known Ubuntu versions have broad
@@ -45,7 +49,7 @@ and proven in the field.
 While one can use classic Ubuntu on IoT devices, Ubuntu Core provides many features that make it a better fit. 
 
 
-# Core and classic compared
+## Core and classic compared
 
 |                      | Core                                                                                                     | classic                                                                                                                                                        |
 |----------------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
