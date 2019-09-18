@@ -12,7 +12,7 @@ Snaps and snapd are documented, designed, and discussed extensively on [snapcraf
 
 Let's do a quick overview of some basics.
 
-# Snaps
+## Snaps
 
 Snap is the native Ubuntu Core packaging system. There is no Debian package support in the runtime of Ubuntu Core. And, Snaps are increasingly used in classic Ubuntu flavours and other Linux distributions. 
 

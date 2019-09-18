@@ -23,7 +23,7 @@ navigation:
         location: intro/setting-up-accounts.md
 
       - title: Geting around
-        location: getting-around.md
+        location: intro/getting-around.md
 
   - title: Building images
 
