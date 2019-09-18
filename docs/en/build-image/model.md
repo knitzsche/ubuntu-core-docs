@@ -76,7 +76,7 @@ To create an image with a custom Model, you need to sign a Model Assertion.
 
 #### Requirements
 
- - The snapcraft key used to sign must be registered
+ - The snapcraft key used to sign must be registered. See [Snapcraft keys](../keys/keys.md)
  - The snapcraft key must be available on the Ubuntu system for the current Ubuntu user
  - For Models that point at a Brand Store, the key must be Registered under the Brand Account
  - `snapcraft login` as the Ubuntu SSO Account to which the key is registered
