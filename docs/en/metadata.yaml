@@ -35,10 +35,16 @@ navigation:
       - title: The Model
         location: build-image/model.md
 
-      - title: Building Ubuntu Core
-        location: build-image/core.md
+      - title: Building stock Ubuntu Core
+        location: build-image/stock-core.md
 
-      - title: Seeding Ubuntu rlassic
+      - title: Building custom Ubuntu Core
+        location: build-image/custom-core.md
+
+      - title: Building for Brand Stores
+        location: build-image/brand-store-core.md
+
+      - title: Seeding classic Ubuntu
         location: build-image/seeding-classic.md
 
   - title: Snap Stores 

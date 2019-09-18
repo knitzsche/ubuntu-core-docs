@@ -14,9 +14,9 @@ The `ubuntu-image` command requires a signed model assertion filename as the fin
 
 Let's take a closer look.
 
-# Model Assertion
+## Model Assertion
 
-## Fields
+### Fields
 
 |Description|Sample|Comment|
 |--|--|--|
@@ -70,7 +70,7 @@ You can create and use your own signed Model Assertion to build a custom image. 
 
 You point an image at a snap store with the `store: STORE-ID` key in the Model assertion. See below.
 
-### Signing a Model Assertion
+### Signing a custom Model Assertion
 
 To create an image with a custom Model, you need to sign a Model Assertion. 
 
