@@ -1,35 +1,59 @@
 ---
-title: Getting around
-table_of_contents: true
+title: Ubuntu for IoT
 ---
 
-#Getting around
+# Ubuntu Core for IoT
 
-Welcome to Ubuntu IoT Developer documentation. 
+Ubuntu Core is an all-snaps, minimalistic rendition of Ubuntu designed from the ground up to meet the needs of IoT devices and their distributors. 
 
-These pages cover the core set of platform and service technologies that make up Ubuntu’s Internet of Things (IoT) offering, addressing how Ubuntu operating systems and technologies deliver a smooth, updatable and secure solution for IoT its dsistributors. 
+It is light-weight and battle-hardened with built in software confinement for system security and stability.  
 
-This documentation is just one part of the wide world of Ubuntu documentation. 
+It is composed only of snaps, which are transactionally and atomically updated, with automatic rollback on installation failure: a kernel snap, a core snap (for the rootfs), a gadget
+snap, a snapd snap, and application snaps. 
 
-## Snapcraft for packaging
+Canonical provides reference snaps and OS images for some current best-of-breed IoT platforms. 
+You can also roll your own image. 
 
-Note particularly that Ubuntu for IoT depends on [Snapcraft](https://docs.snapcraft.io/), the elegant tool for packaging softrware into Snaps. For ongoing Snacraft design and discussion, see the [snapcraft forum topic](https://forum.snapcraft.io/c/snapcraft). 
+Ubuntu Core uses a rolling release model aligned with Ubuntu Long Term Support (LTS) releases. 
 
-Snapcraft source is [here](https://github.com/snapcore/snapcraft). Participation at all levels is always welcome. 
+## Key features
 
-## The Snapd daemon
+ - Faster, more reliable, with stronger security guarantees for applications and
+   users compared to a traditional Linux distribution.
+ - Atomic transactional snap-based updates for applications and the OS itself, all of which
+   can be rolled back if needed automating most maintenance and upgrades.
+ - Separation of OS and application files into sets of distinct read-only images,
+   to easily and securely add multiple applications and additional functionality onto a device.
+ - Applications are distributed via snaps, a simple application packaging system
+   that makes it easy for developers to build and distribute applications across
+   many Linux distributions from a public or private app store.
+ - Public/private key-based validation and authentication is built-in at every
+   stage, proving that what runs is exactly what OS and app developers intend.
 
-The Snapd daemon is the heart of all snap systems, and is the key technology that enables Ubuntu for IoT. See the [forum topic](https://forum.snapcraft.io/c/snapd) for ongoing discussions of snapd design, the roadmap, and for lively and in-depth communciations with Snapd developers, users, and the community.
+# Ubuntu Classic for IoT
 
-Check out the [Snapd source code](https://github.com/snapcore/snapd), and get involved!
+Classic Ubuntu includes the traditional Ubuntu Desktop, Ubuntu Server and 
+Ubuntu Cloud distributions. These well-known Ubuntu versions have broad
+support for various device configurations including user-interactive desktop
+systems, enterprise server systems and Internet of Things (IoT) devices.
 
-## Other key links 
+Ubuntu Desktop, Server and Cloud are widely deployed across diverse public and
+private sectors by millions of people and thousands of organizations. Built
+from the common Ubuntu Debian package archives, they are well-known, time-tested
+and proven in the field.
 
- * There is no better place than ["ubunut.com IoT"](https://ubuntu.com/iot) for an introduction to Ubuntu IoT.
- * Key developers continuously post new ["Ubuntu tutorials"][ubuntu-tutorials] designed for all levels of familiarity. 
-* Get started as a [developer](https://developer.ubuntu.com/core/get-started/developer-setup).
+While one can use classic Ubuntu on IoT devices, Ubuntu Core provides many features that make it a better fit. 
 
-## Contact Canonical
 
-[Conact Canonical](https://www.ubuntu.com/core/contact-ushere)
+# Core and classic compared
+
+|                      | Core                                                                                                     | classic                                                                                                                                                        |
+|----------------------|----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Minimum requirements | 500 MHz single core processor256 MB RAM512 MB storage                                                    | 1 GHz dual core processor512 MB RAM1.5 GB storage                                                                                                              |
+| Graphical UI         | None by default (can utilize Wayland or Mir)                                                             | Xorg and GNOME Shell or Wayland and GNOME Shell                                                                                                                |
+| Package system       | snaps                                                                                                    | Debs & snaps                                                                                                                                                   |
+| Application security | Isolation via AppArmor and Seccomp                                                                       | Traditional user and group permissions (for Debs);Strict isolation via AppArmor and Seccomp for snaps;Transitional security with classic confinement for snaps |
+| Updates              | Pushed from the Global (public) store & optionally a Brand (private) store;All updates are transactional | Traditional apt repository updates;Also from public store & optionally Brand store for snaps;Updates for snaps are transactional                               |
+
+
 

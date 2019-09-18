@@ -5,7 +5,7 @@ navigation:
     children:
 
       - title: Ubuntu for IoT
-        location: intro/intro-ubuntu-iot.md
+        location: index.md
 
       - title: Hardware platforms
         location: intro/intro-platforms.md
@@ -23,7 +23,7 @@ navigation:
         location: intro/setting-up-accounts.md
 
       - title: Geting around
-        location: index.md
+        location: getting-around.md
 
   - title: Building images
 
