@@ -30,22 +30,22 @@ navigation:
     children:
 
       - title: Getting started
-        location: build-image/about.md
+        location: image/about.md
 
       - title: The Model
-        location: build-image/model.md
+        location: image/model.md
 
       - title: Building stock Ubuntu Core
-        location: build-image/stock-core.md
+        location: image/stock-core.md
 
       - title: Building custom Ubuntu Core
-        location: build-image/custom-core.md
+        location: image/custom-core.md
 
       - title: Building for Brand Stores
-        location: build-image/brand-store-core.md
+        location: image/brand-store-core.md
 
-      - title: Seeding classic Ubuntu
-        location: build-image/seeding-classic.md
+      #- title: Seeding classic Ubuntu
+      #  location: image/seeding-classic.md
 
   - title: Snap Stores 
 
@@ -140,7 +140,7 @@ navigation:
         location:  network/network-manager.md
 
       - title: WiFi AP
-        location: capabilities/wifi-ap.md  
+        location: network/wifi-ap.md  
 
   - title:  Cellular 
 
@@ -149,7 +149,7 @@ navigation:
         location: cellular/intro.md
 
       - title: Modem Manager
-        location: cellular/modem-managero.md
+        location: cellular/modem-manager.md
 
   - title:  Bluetooth 
 
@@ -173,9 +173,6 @@ navigation:
 
       - title: Audio
         location: capabilities/audio/index.md
-
-      - title: Power management (battery)
-        location: capabilities/power/index.md
 
   - title: Security
 
