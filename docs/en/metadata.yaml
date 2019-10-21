@@ -140,7 +140,7 @@ navigation:
         location:  network/network-manager.md
 
       - title: WiFi AP
-        location: capabilities/WiFi-AP.md  
+        location: capabilities/wifi-ap.md  
 
   - title:  Cellular 
 
