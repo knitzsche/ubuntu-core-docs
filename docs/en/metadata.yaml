@@ -109,9 +109,6 @@ navigation:
       - title: Update control
         location:  mgmt/updates.md
 
-      - title: Netplan
-        location:  mgmt/netplan.md
-
       - title: Using snapd-control
         location:  mgmt/snapd-control.md
 
@@ -127,23 +124,49 @@ navigation:
       - title: Serial console
         location:  mgmt/serial-console.md
 
-  - title: Additional capabilities
+  - title: Networking  
 
     children:
       - title: Introduction
-        location: capabilities/intro.md
+        location: network/intro.md
+
+      - title: Netplan
+        location:  network/netplan.md
+
+      - title: Networkd
+        location:  network/networkd.md
 
       - title: Network Manager
-        location: capabilities/network-manager.md  
-
-      - title: Modem Manager
-        location: capabilities/modem-manager.md  
+        location:  network/network-manager.md
 
       - title: WiFi AP
         location: capabilities/WiFi-AP.md  
 
-      - title: Bluetooth
-        location: capabilities/bluetooth/index.md
+  - title:  Cellular 
+
+    children:
+      - title: Introduction
+        location: cellular/intro.md
+
+      - title: Modem Manager
+        location: cellular/modem-managero.md
+
+  - title:  Bluetooth 
+
+    children:
+      - title: Introduction
+        location: bluetooth/intro.md
+
+      - title: Bluez
+        location: bluetooth/bluez.md
+
+
+  - title: Additional capabilities
+
+    children:
+
+      - title: Introduction
+        location: capabilities/intro.md
 
       - title: Disk
         location: capabilities/disk/index.md
@@ -154,14 +177,22 @@ navigation:
       - title: Power management (battery)
         location: capabilities/power/index.md
 
-      - title: TPM
-        location: capabilities/tpm/index.md
+  - title: Security
 
-      - title: Utilities
-        location: capabilities/utilities/index.md
+    children:
 
-      - title: Location
-        location: capabilities/location/index.md
+      - title: Introduction
+        location: security/intro.md
+
+      - title: Ubuntu Core confinement
+        location: security/ubuntu-core-confinment.md
+
+      - title: Developing with confinement
+        location: security/developing.md
+
+      - title: CVEs and USNs
+        location: security/cves-usns.md
+
 
   - title: Snapcraft keys
 
