@@ -78,7 +78,7 @@ navigation:
           - title: Development and Publishing
             location:  store/dev_release.md
 
-          - title: Connecting Interfaces
+          - title: Auto Connecting Interfaces
             location:  store/connecting_interfaces.md
 
           - title: Store Channels
@@ -118,6 +118,9 @@ navigation:
       - title: Installing snaps offline
         location:  mgmt/sideloading.md
 
+      - title: Auto connecting interfaces
+        location:  mgmt/connecting-interfaces.md
+
       - title: Logs
         location:  mgmt/logs.md
  
@@ -136,20 +139,17 @@ navigation:
       - title: Networkd
         location:  network/networkd.md
 
+      - title: WPASupplicant
+        location:  network/wpasupplicant.md
+
       - title: Network Manager
         location:  network/network-manager.md
 
       - title: WiFi AP
         location: network/wifi-ap.md  
 
-  - title:  Cellular 
-
-    children:
-      - title: Introduction
-        location: cellular/intro.md
-
       - title: Modem Manager
-        location: cellular/modem-manager.md
+        location: network/modem-manager.md
 
   - title:  Bluetooth 
 
