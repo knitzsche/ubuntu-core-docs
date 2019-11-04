@@ -3,5 +3,5 @@ title: "Introduction"
 table_of_contents: true
 ---
 
-# Additional capabilities
+# Security and confinement
 

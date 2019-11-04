@@ -30,22 +30,22 @@ navigation:
     children:
 
       - title: Getting started
-        location: build-image/about.md
+        location: image/about.md
 
       - title: The Model
-        location: build-image/model.md
+        location: image/model.md
 
       - title: Building stock Ubuntu Core
-        location: build-image/stock-core.md
+        location: image/stock-core.md
 
       - title: Building custom Ubuntu Core
-        location: build-image/custom-core.md
+        location: image/custom-core.md
 
       - title: Building for Brand Stores
-        location: build-image/brand-store-core.md
+        location: image/brand-store-core.md
 
-      - title: Seeding classic Ubuntu
-        location: build-image/seeding-classic.md
+      #- title: Seeding classic Ubuntu
+      #  location: image/seeding-classic.md
 
   - title: Snap Stores 
 
@@ -78,7 +78,7 @@ navigation:
           - title: Development and Publishing
             location:  store/dev_release.md
 
-          - title: Connecting Interfaces
+          - title: Auto Connecting Interfaces
             location:  store/connecting_interfaces.md
 
           - title: Store Channels
@@ -109,9 +109,6 @@ navigation:
       - title: Update control
         location:  mgmt/updates.md
 
-      - title: Netplan
-        location:  mgmt/netplan.md
-
       - title: Using snapd-control
         location:  mgmt/snapd-control.md
 
@@ -121,29 +118,55 @@ navigation:
       - title: Installing snaps offline
         location:  mgmt/sideloading.md
 
+      - title: Auto connecting interfaces
+        location:  mgmt/connecting-interfaces.md
+
       - title: Logs
         location:  mgmt/logs.md
  
       - title: Serial console
         location:  mgmt/serial-console.md
 
-  - title: Additional capabilities
+  - title: Networking  
 
     children:
       - title: Introduction
-        location: capabilities/intro.md
+        location: network/intro.md
+
+      - title: Netplan
+        location:  network/netplan.md
+
+      - title: Networkd
+        location:  network/networkd.md
+
+      - title: WPASupplicant
+        location:  network/wpasupplicant.md
 
       - title: Network Manager
-        location: capabilities/network-manager.md  
-
-      - title: Modem Manager
-        location: capabilities/modem-manager.md  
+        location:  network/network-manager.md
 
       - title: WiFi AP
-        location: capabilities/WiFi-AP.md  
+        location: network/wifi-ap.md  
 
-      - title: Bluetooth
-        location: capabilities/bluetooth/index.md
+      - title: Modem Manager
+        location: network/modem-manager.md
+
+  - title:  Bluetooth 
+
+    children:
+      - title: Introduction
+        location: bluetooth/intro.md
+
+      - title: Bluez
+        location: bluetooth/bluez.md
+
+
+  - title: Additional capabilities
+
+    children:
+
+      - title: Introduction
+        location: capabilities/intro.md
 
       - title: Disk
         location: capabilities/disk/index.md
@@ -151,17 +174,22 @@ navigation:
       - title: Audio
         location: capabilities/audio/index.md
 
-      - title: Power management (battery)
-        location: capabilities/power/index.md
+  - title: Security
 
-      - title: TPM
-        location: capabilities/tpm/index.md
+    children:
 
-      - title: Utilities
-        location: capabilities/utilities/index.md
+      - title: Introduction
+        location: security/intro.md
 
-      - title: Location
-        location: capabilities/location/index.md
+      - title: Ubuntu Core confinement
+        location: security/ubuntu-core-confinment.md
+
+      - title: Developing with confinement
+        location: security/developing.md
+
+      - title: CVEs and USNs
+        location: security/cves-usns.md
+
 
   - title: Snapcraft keys
 
